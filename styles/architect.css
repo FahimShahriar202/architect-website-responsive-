@@ -37,6 +37,15 @@
 .orange-btn{
   background-color: rgba(255, 144, 14, 1);
 }
+
+main{
+  max-width: 1440px;
+  margin: 0 auto ;
+}
+
+main > section {
+  margin-top: 130px;
+}
 /* shared styles end */
 
 
@@ -98,4 +107,81 @@
 
 .banner-image{
   width: 100%;
+}
+
+/* team and features */
+.teams{
+  align-items: center;
+}
+
+.team-image-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+
+}
+
+.our-features{
+  margin-left: 130px;
+  max-width: 560px;
+}
+
+
+.features{
+  color:rgba(255, 144, 14, 1);
+  
+ 
+}
+
+.quick-list-header{
+  font-size: 3.8rem;
+
+}
+
+/* features you will enjoy section */
+.section-title{
+  font-weight: 700;
+  font-size: 4rem;
+
+}
+
+
+/* some facts */
+.section-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+
+
+
+/* responsive media query */
+
+/* small device */
+@media screen and (max-width: 576px){ 
+  .navbar, .nav-links, .teams{
+    flex-direction: column;
+  }
+
+  .team-image-container{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+
+  .our-features{
+    margin-left: 20px;
+  }
+
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .teams{
+    flex-direction: column;
+  }
+
+  .our-features{
+    margin-left: 50px auto;
+  }
+  
 }
